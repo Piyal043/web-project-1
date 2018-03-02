@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<title>
+Forms
+</title>
+</head>
+<body>
+	<p>Enter the Marks and corresponding credit of the Subjects</p>
+	<p><input id="db" type="text" name="db">Database Managment</p>
+	<p><input id="db0" type="text" name="dbc">Credit</p>
+	<p><input id="p" type="text" name="p">Peripheral</p>
+	<p><input id="db1" type="text" name="pc">Credit</p>
+	<p><input id="w" type="text" name="w">Web Development</p>
+	<p><input id="db2" type="text" name="wc">Credit</p>
+	<p><input id="e" type="text" name="e">ECE</p>
+	<p><input id="db3" type="text" name="ec">Credit</p>
+	<p><input id="t" type="text" name="t">Theory of Computing</p>
+	<p><input id="db4" type="text" name="tc">Credit</p>
+	<button type="button" onclick="myFunction()">Submit</button>
+	<p>Credit achieved</p>
+	<p id="result"></p>
+	<p>Cgpa of first sub</p>
+	<p id="result2"></p>
+<script>
+	function myFunction(){
+		var a,b,c,d,l,e,x=[],text;
+		a=document.getElementById("db0").value;
+		l=document.getElementById("db").value;
+		b=document.getElementById("db1").value;
+		m=document.getElementById("p").value;
+		c=document.getElementById("db2").value;
+		n=document.getElementById("e").value;
+		d=document.getElementById("db3").value;
+		o=document.getElementById("w").value;
+		e=document.getElementById("db4").value;
+		s=document.getElementById("t").value;
+		p=parseFloat(a)+parseFloat(b)+parseFloat(c)+parseFloat(d)+parseFloat(e);
+		p=p/20.25;
+		l=fun(parseInt(l))+fun(parseInt(m))+fun(parseInt(n))+fun(parseInt(o))+fun(parseInt(s));
+		document.getElementById("result2").innerHTML=l;
+		l=l/25;
+		document.getElementById("result").innerHTML=p;
+		
+	}
+	function fun(a)
+	{
+		if(a>80)return 5;
+		else if(a>70)return 4;
+		else if(a>60)return 3;
+		else if(a>50)return 2;
+		else if(a>40)return 1;
+		else return 0;
+	}
+</script>
+</body>
+</html>

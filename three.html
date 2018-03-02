@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admission is para</title>
+  <link rel="stylesheet" type="text/css" href="three.css">
+</head>
+<body>
+  <img src="kk.jpg" height="180px" width="180px">
+  <img src="k.jpg" height="180px" width="180px">
+  <img src="ad.jpg" height="180px" width="180px">
+  <img src="bau.jpg" height="180px" width="180px">
+  <img src="d.jpg" height="180px" width="180px">
+  <img src="c.jpg" height="180px" width="180px">
+
+    <div id="piyal">
+
+      <ul>
+          <li><a href="#">Home</a>
+
+            <ul>
+                <li><a href="#">Home</a>
+                <li><a href="#">Home</a>
+                <li><a href="#">Home</a>
+                <li><a href="#">Home</a>
+            </ul>
+
+          </li>
+
+          <li><a href="#">Notice</a>
+              <ul>
+                <li><a href="#">Home</a>
+                <li><a href="#">Home</a>
+                <li><a href="#">Home</a>
+                <li><a href="#">Home</a>
+            </ul>
+          </li>
+          <li><a href="#">Admission</a>
+                <ul>
+                <li><a href="#">Home</a>
+                <li><a href="#">Home</a>
+                <li><a href="#">Home</a>
+                <li><a href="#">Home</a>
+            </ul>
+          </li>
+          <li><a href="#">Result</a>
+                <ul>
+                <li><a href="#">Home</a>
+                <li><a href="#">Home</a>
+                <li><a href="#">Home</a>
+                <li><a href="#">Home</a>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+      </ul>
+
+    </div>
+    <div class="row">
+      <div class="column">
+      <h3>Admission info</h3>
+       <p>Jahangirnagar University admission test will be start from 13 September 2017. Jagannath University admission test & Dhaka University admission test will be held at the same day. Dhaka University take admission test at morning and Jagannath University take admission test at afternoon.
+
+Every student wants to get admission at Public University in Bangladesh. The number of seats of public university is very few. In Bangladesh Public University is most valuable & The low-cost studies facilities than private University. For this reason students desires to admit in Public University.</p></div>
+      <div class="column"> <h3>Result Info</h3><p>HSC Routine 2018 Dhaka Bangladesh Education Board Exam. HSC exam 2018 will be held on 2nd April 2017. HSC Routine 2018 will be published on February 2018, said a spokesman of Dhaka education board Bangladesh. HSC Result 2018 will be published on our website, Bangladesh education board official website www.educationboard.gov.bd and all the local daily newspapers & electronic media. HSC exam full meaning Higher Secondary Certificate examination, is a one of the largest exam in the Bangladesh.</p></div>
+      <div class="column"><h3>Previous Result of Admission</h3><p>All Public University Admission Circular 2018-19 Bangladesh. Just after publication of the result a battle of admission will begin. Many of the interested candidates are searching for University Admission 2018-19 information regarding admission notice, date of form fill up etc. Like previous years I am here with my website with a view to helping you about University Admission 2018-19. I will try to provide up to date information for the admission. In this post I am providing all university admission information in one place.
+
+ </p></div>
+  </div>
+  <p><h3>Log In Here</h3></p>
+  <p>Roll:<input id="roll"></p>
+  <p>Registration Number:<input id="reg"></p>
+  <button type="button" onclick="submit()">Submit</button>
+  <p id="submission_result"></p>
+
+  <hr>
+  <h6 align="center">All copyright reserved by Piyal</h6>
+  <script>
+  function submit()
+  {
+    var x,y;
+    x=document.getElementById('roll').value;
+    y=document.getElementById('reg').value;
+    if(x=="" || y=="")
+    {
+      alert("The form must be filled out")
+      return false;
+    }
+    else
+    {
+      document.getElementById("submission_result").innerHTML="You are successfully logged in";
+    }
+  }
+  </script>
+</body>
+</html>
